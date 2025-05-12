@@ -3,3 +3,4 @@ scikit-learn
 PyYAML
 mlflow
 pytest
+xgboost
