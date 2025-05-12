@@ -6,6 +6,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, mean_squared_error, r2_score
 from preprocess import load_and_preprocess_data
 import yaml
+import tempfile
 
 def load_config(config_path="config.yaml"):
     with open(config_path, "r") as f:
@@ -40,7 +41,13 @@ def main():
 
     # Iniciar el tracking de MLflow
     config = load_config()
-    mlflow.set_tracking_uri("file:./mlruns")  # Cambiar la ruta a una relativa
+
+    # Verificar si la carpeta mlruns existe, si no, crearla
+    if not os.path.exists("mlruns"):
+        os.makedirs("mlruns")
+    
+    # Configurar la URI de MLflow a una ruta relativa
+    mlflow.set_tracking_uri("file:./mlruns")
     mlflow.set_experiment(config["mlflow"]["experiment_name"])
     mlflow.start_run()
 
