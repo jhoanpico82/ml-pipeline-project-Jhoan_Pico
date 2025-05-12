@@ -38,7 +38,7 @@ jobs:
           python src/train.py  # Ejecutamos tu script para entrenar el modelo y registrarlo en MLflow
 
       - name: Upload MLflow model as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: mlflow-model  # Nombre del artefacto
           path: mlruns/  # Directorio donde MLflow guarda el modelo
