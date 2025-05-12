@@ -1,0 +1,8 @@
+#### 3. **Ignorar carpetas innecesarias en `.gitignore`**
+Ejemplo de contenido para `.gitignore`:
+
+_pycache_/
+*.pyc
+.mlruns/
+.env
+.vscode/

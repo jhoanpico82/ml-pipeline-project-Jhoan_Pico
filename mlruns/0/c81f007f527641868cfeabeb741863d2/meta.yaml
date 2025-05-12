@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/jhoan/PYTHON/MLOPS/entrega_final/ml-pipeline-project_Jhoan_Pico/mlruns/0/c81f007f527641868cfeabeb741863d2/artifacts
+end_time: 1747068754462
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c81f007f527641868cfeabeb741863d2
+run_name: luminous-turtle-266
+run_uuid: c81f007f527641868cfeabeb741863d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747068749542
+status: 3
+tags: []
+user_id: jhoan
