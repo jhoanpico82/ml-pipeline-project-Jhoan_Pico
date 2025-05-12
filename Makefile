@@ -1,5 +1,3 @@
-# Makefile
-
 .PHONY: install train test
 
 install:
