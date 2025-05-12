@@ -1,3 +1,4 @@
+import os
 import xgboost as xgb
 import mlflow
 import mlflow.xgboost
@@ -39,7 +40,8 @@ def main():
 
     # Iniciar el tracking de MLflow
     config = load_config()
-    mlflow.set_tracking_uri(f"file://{config['mlflow']['tracking_uri']}")
+    mlflow.set_tracking_uri(config["mlflow"]["tracking_uri"])
+    mlflow.set_experiment(config["mlflow"]["experiment_name"])
     mlflow.start_run()
 
     # Registrar parámetros

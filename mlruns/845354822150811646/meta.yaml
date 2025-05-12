@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/jhoan/PYTHON/MLOPS/entrega_final/ml-pipeline-project_Jhoan_Pico/mlruns/845354822150811646
+creation_time: 1747073691365
+experiment_id: '845354822150811646'
+last_update_time: 1747073691365
+lifecycle_stage: active
+name: banknote_classification
