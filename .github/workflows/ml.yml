@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -29,9 +29,10 @@ jobs:
       - name: Run tests
         run: make test
 
-      # Paso 3: Crear explícitamente el directorio mlruns antes de entrenar
+      # Crear el directorio 'mlruns' antes de entrenar el modelo
       - name: Create MLflow directory
-        run: mkdir -p mlruns
+        run: |
+          mkdir -p mlruns
 
       - name: Train model
         run: make train
