@@ -29,10 +29,13 @@ jobs:
       - name: Run tests
         run: make test
 
+      # Paso 3: Crear explícitamente el directorio mlruns antes de entrenar
+      - name: Create MLflow directory
+        run: mkdir -p mlruns
+
       - name: Train model
         run: make train
 
       - name: Upload model to MLflow
         run: |
-          mkdir -p mlruns
           mlflow ui --host 0.0.0.0 --port 5000
