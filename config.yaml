@@ -12,5 +12,5 @@ model:
     max_depth: 3
 
 mlflow:
-  tracking_uri: file:./mlruns
+  tracking_uri: file://mlruns
   experiment_name: banknote_classification
