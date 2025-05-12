@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/jhoan/PYTHON/MLOPS/entrega_final/ml-pipeline-project_Jhoan_Pico/mlruns/0/be4a866550b54ee9a4242ac1758898ff/artifacts
+end_time: 1747072432866
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be4a866550b54ee9a4242ac1758898ff
+run_name: peaceful-snipe-401
+run_uuid: be4a866550b54ee9a4242ac1758898ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747072427204
+status: 3
+tags: []
+user_id: jhoan

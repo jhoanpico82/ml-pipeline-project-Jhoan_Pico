@@ -1,6 +1,7 @@
 import xgboost as xgb
 import mlflow
 import mlflow.xgboost
+import pandas as pd
 from sklearn.metrics import accuracy_score, mean_squared_error, r2_score
 from preprocess import load_and_preprocess_data
 import yaml
