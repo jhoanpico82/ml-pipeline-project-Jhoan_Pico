@@ -12,5 +12,5 @@ model:
     max_depth: 3
 
 mlflow:
-  tracking_uri: ./mlruns
+  tracking_uri: file:///C:/Users/jhoan/PYTHON/MLOPS/entrega_final/ml-pipeline-project_Jhoan_Pico/mlruns
   experiment_name: banknote_classification
